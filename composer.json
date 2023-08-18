@@ -1,0 +1,21 @@
+{
+    "name": "jonpurvis/laravel-uninspire",
+    "description": "The opposite command of Laravel artisan inspire",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jon Purvis"
+        }
+    ],
+    "keywords": [
+        "laravel"
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.19",
+        "illuminate/console": "^10.19"
+    },
+    "autoload": {},
+    "autoload-dev": {},
+    "config": {}
+}
