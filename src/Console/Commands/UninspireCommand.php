@@ -29,7 +29,7 @@ class UninspireCommand extends Command
      */
     public function handle(): int
     {
-       $this->info(collect([
+       $this->comment(collect([
            "Expect the mediocre, and you won't be disappointed.",
            "Why aim for the stars when you can settle for the ceiling?",
            "Dream small, achieve even smaller",
