@@ -1,6 +1,6 @@
 {
     "name": "jonpurvis/laravel-uninspire",
-    "description": "The opposite command of Laravel artisan inspire",
+    "description": "The opposite command of the Laravel artisan inspire command",
     "license": "MIT",
     "authors": [
         {
@@ -12,10 +12,22 @@
     ],
     "require": {
         "php": "^8.1",
-        "illuminate/support": "^10.19",
-        "illuminate/console": "^10.19"
+        "illuminate/console": "^9.0 || ^10.0",
+        "illuminate/support": "^9.0 || ^10.0"
     },
-    "autoload": {},
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "JonPurvis\\Uninspire\\": "src/"
+        }
+    },
     "autoload-dev": {},
-    "config": {}
+    "config": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JonPurvis\\Uninspire\\Providers\\UninspireServiceProvider"
+            ]
+        }
+    }
 }
