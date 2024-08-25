@@ -1,3 +1,5 @@
+<img src="art/banner.png">
+
 # Laravel Uninspire
 
 A humerous alternative to the Laravel Inspire command.
