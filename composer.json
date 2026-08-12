@@ -11,7 +11,16 @@
         "laravel"
     ],
     "require": {
-        "php": "^8.2"
+        "php": "^8.3",
+        "illuminate/console": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-laravel": "^4.0"
     },
     "minimum-stability": "stable",
     "autoload": {
@@ -19,13 +28,27 @@
             "JonPurvis\\Uninspire\\": "src/"
         }
     },
-    "autoload-dev": {},
-    "config": {},
+    "autoload-dev": {
+        "psr-4": {
+            "JonPurvis\\Uninspire\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "JonPurvis\\Uninspire\\Providers\\UninspireServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "lint": "vendor/bin/pint --test",
+        "test": "vendor/bin/pest"
     }
 }

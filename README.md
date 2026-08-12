@@ -25,7 +25,7 @@ To install Laravel Uninspire, you can run the following in your project's root:
 composer require jonpurvis/laravel-uninspire
 ```
 
-The minimum PHP version needed for this package is 8.2.
+This package supports PHP 8.3, 8.4, and 8.5, and Laravel 12 and 13.
 
 ## Usage
 
