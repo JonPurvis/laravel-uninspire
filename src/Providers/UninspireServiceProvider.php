@@ -14,7 +14,7 @@ class UninspireServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands(
                 commands: [
-                    UninspireCommand::class
+                    UninspireCommand::class,
                 ]
             );
         }
