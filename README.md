@@ -4,6 +4,7 @@
 
 A humerous alternative to the Laravel Inspire command.
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jonpurvis/laravel-uninspire/ci.yml)
 ![GitHub last commit](https://img.shields.io/github/last-commit/jonpurvis/laravel-uninspire)
 ![Packagist PHP Version](https://img.shields.io/packagist/dependency-v/jonpurvis/laravel-uninspire/php)
 ![GitHub issues](https://img.shields.io/github/issues/jonpurvis/laravel-uninspire)
