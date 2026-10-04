@@ -2,3 +2,13 @@
 /vendor/
 composer.lock
 .DS_Store
+.phpunit.result.cache
+/.phpunit.cache
+/.php-cs-fixer.cache
+/.php-cs-fixer.php
+*.swp
+*.swo
+coverage.xml
+.temp/
+/.pest/
+.phpstan.cache
