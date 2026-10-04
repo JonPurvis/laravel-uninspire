@@ -4,7 +4,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Jon Purvis"
+            "name": "Jon Purvis",
+            "homepage": "https://jonathanpurvis.co.uk"
         }
     ],
     "keywords": [
@@ -20,9 +21,14 @@
         "laravel/pint": "^1.0",
         "orchestra/testbench": "^10.0|^11.0",
         "pestphp/pest": "^4.0",
-        "pestphp/pest-plugin-laravel": "^4.0"
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "pestphp/pest-plugin-type-coverage": "^4.0",
+        "phpstan/phpstan": "^2.2",
+        "rector/rector": "^2.5",
+        "symfony/var-dumper": "^7.0|^8.0"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "JonPurvis\\Uninspire\\": "src/"
@@ -37,6 +43,7 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true
         },
+        "preferred-install": "dist",
         "sort-packages": true
     },
     "extra": {
@@ -47,8 +54,24 @@
         }
     },
     "scripts": {
-        "analyse": "vendor/bin/phpstan analyse",
-        "lint": "vendor/bin/pint --test",
-        "test": "vendor/bin/pest"
+        "lint": [
+            "pint --parallel",
+            "rector"
+        ],
+        "refactor": "rector",
+        "test:type-coverage": "pest --type-coverage --min=100",
+        "test:lint": [
+            "pint --parallel --test",
+            "rector --dry-run"
+        ],
+        "test:refactor": "rector --dry-run",
+        "test:unit": "pest --parallel --coverage",
+        "test:types": "phpstan",
+        "test": [
+            "@test:lint",
+            "@test:types",
+            "@test:type-coverage",
+            "@test:unit"
+        ]
     }
 }

@@ -1,23 +1,24 @@
-<img src="art/banner.png">
+<p align="center">
+    <img src="art/banner.png" alt="Laravel Uninspire">
+    <p align="center">
+        <a href="https://github.com/JonPurvis/laravel-uninspire/actions"><img alt="GitHub Workflow Status (main)" src="https://github.com/JonPurvis/laravel-uninspire/actions/workflows/tests.yml/badge.svg"></a>
+        <a href="https://packagist.org/packages/jonpurvis/laravel-uninspire"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/jonpurvis/laravel-uninspire"></a>
+        <a href="https://packagist.org/packages/jonpurvis/laravel-uninspire"><img alt="Latest Version" src="https://img.shields.io/packagist/v/jonpurvis/laravel-uninspire"></a>
+        <a href="https://packagist.org/packages/jonpurvis/laravel-uninspire"><img alt="License" src="https://img.shields.io/packagist/l/jonpurvis/laravel-uninspire"></a>
+    </p>
+</p>
 
 # Laravel Uninspire
 
 A humerous alternative to the Laravel Inspire command.
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jonpurvis/laravel-uninspire/ci.yml)
-![GitHub last commit](https://img.shields.io/github/last-commit/jonpurvis/laravel-uninspire)
-![Packagist PHP Version](https://img.shields.io/packagist/dependency-v/jonpurvis/laravel-uninspire/php)
-![GitHub issues](https://img.shields.io/github/issues/jonpurvis/laravel-uninspire)
-![GitHub](https://img.shields.io/github/license/jonpurvis/laravel-uninspire)
-![Packagist Downloads](https://img.shields.io/packagist/dt/jonpurvis/laravel-uninspire)
-
 ## Introduction
 
-If you're familiar with Laravel, then you should be familiar with `php artisan inspire`. 
+If you're familiar with Laravel, then you should be familiar with `php artisan inspire`.
 It's a simple command that outputs an inspirational quote when you run it.
 
 I thought it would be fun to build the opposite of that command. A command
-that when ran, spits out a humourous uninspiring quote. 
+that when ran, spits out a humourous uninspiring quote.
 
 ## Installation
 To install Laravel Uninspire, you can run the following in your project's root:
@@ -38,6 +39,7 @@ php artisan uninspire
 ```
 
 ## Contributing
-Contributions to the package are more than welcome. Feel free 
-to submit a Pull Request with any additions. If you have any issues using the package, then please open an Issue.
 
+Contributions to the package are more than welcome - open an Issue or submit a Pull Request. Please see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+To report a security vulnerability, please see [SECURITY.md](SECURITY.md).
